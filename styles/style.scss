@@ -1,0 +1,214 @@
+@import '_variables';
+@import '_global';
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+ 
+header{
+    @include flex(row,space-between,center);
+    height:50px;
+    .logo{
+        h4{
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0px;
+        }
+    }
+    .main-nav{
+        .nav-list{
+            @include flex('row','space-between','center');
+            list-style-type: none;
+            margin: 0px;
+            .nav-list-item{
+                .nav-link{
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: 600;
+                    color:$black-accent;
+                    border-bottom:2px solid transparent ;
+                    position:relative;
+                    &:hover{
+                        transition: 2s ease; 
+                        &:before{
+                            content: '';
+                            height: 2px;
+                            width: 39%;
+                            background: $black-accent;
+                            position: absolute;
+                            bottom: 4px !important;
+                            z-index: 999;
+                        }     
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hero-section{
+    padding: 0px;
+    height: calc(100vh - 50px);
+    background:black;
+    overflow-y: hidden;
+    img{
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+    }
+}
+
+.about-me{
+    height: 300px;
+    padding: 50px 0px;
+    .am-content{
+        @include flex(column,center,flex-start);
+        h4{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+            background: $black-accent;
+            padding: 7px 20px;
+            color: white;
+        }
+    }
+
+    .am-image{
+        height: 200px;
+        width:100px;
+        @include flex(row,flex-end,center);
+        img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+}
+
+.gallery-section{
+    background:$light-bg;
+    text-align: center;
+    padding: 30px 0px;
+    h4{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .tab-list{
+        @include flex(row,center,center);
+        list-style-type: none;
+        margin-top:20px;
+    }
+    .individual-tab{
+        padding: 5px 15px;
+        margin-right: 5px;
+        font-size: 12px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        &:hover{
+            border: 1px solid $light-border;
+        }
+    }
+    li.active-tab{
+        border: 1px solid $light-border;
+    }
+
+    .gallery {
+        .image-box{
+            cursor: pointer;
+            background:$light-bg;
+            height: auto;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin-top:20px;
+            .top{
+                img{
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+            p{
+                background:white;
+                padding: 15px 5px;
+                font-size: 12px;
+            }
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+                .top{
+                    overflow:hidden;
+                    img{
+                        transform: scale(1.2);
+                        transition: 1s ease;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ask-for-work{
+    padding:30px 0px;
+    h4{
+        text-align: center;
+        font-weight: 700;
+    }
+    .row{
+        margin-top:20px;
+    }
+    .social-links{
+        padding:10px 20px;
+        @include flex(column,center,flex-start);
+        h4{
+            margin-bottom:10px;
+        }
+        p{
+            font-size: 14px;
+        }
+        ul{
+            list-style-type: none;
+            li{
+                margin-top:10px;
+                i{
+                    margin-right: 15px;
+                }
+                a{
+                    text-decoration: none;
+                    font-size:14px;
+                    color:$black-accent;
+                }
+            }
+        }
+    }
+    .contact-form{
+        padding:50px;
+        label{
+            font-size: 12px;
+        }
+        input {
+            font-size: 14px;
+            outline: none;
+        }
+        button{
+            background:$black-accent;
+            color:$white;
+        }
+    }
+}
+
+footer{
+    text-align: center;
+    @include flex(row,center,center);
+    height:50px;
+    background:$black-accent;
+    color:$white;
+    font-size: 14px;
+}
