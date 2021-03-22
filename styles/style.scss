@@ -10,9 +10,12 @@ body{
     font-family: 'Poppins',sans-serif;
 }
  
-header{
+.header{
     @include flex(row,space-between,center);
-    height:50px;
+    max-width:1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
     .logo{
         h4{
             font-size: 14px;
@@ -53,19 +56,31 @@ header{
 
 .hero-section{
     padding: 0px;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 300px);
     background:black;
     overflow-y: hidden;
-    img{
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
+    background-image: url(../assets/ilyuza-mingazova-rCPpZqIm4Ug-unsplash.jpg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+    @include flex(column,center,center);
+    flex-basis:20px;
+    h4{
+        color:$white;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    a{
+        background:white;
+        color:black;
+        padding: 5px 10px;
+        margin-top:10px;
     }
 }
 
 .about-me{
     height: 300px;
-    padding: 50px 0px;
+    padding: 20px 0px;
     .am-content{
         @include flex(column,center,flex-start);
         h4{
@@ -106,6 +121,7 @@ header{
     }
     .tab-list{
         @include flex(row,center,center);
+        flex-wrap: wrap;
         list-style-type: none;
         margin-top:20px;
     }
@@ -115,8 +131,16 @@ header{
         font-size: 12px;
         border: 1px solid transparent;
         cursor: pointer;
-        &:hover{
-            border: 1px solid $light-border;
+        a{
+            color:$black-accent;
+            &:hover{
+                background:$black-accent;
+                color:$white;
+            }
+        }
+        a.active{
+            background:$black-accent;
+            color:$white;
         }
     }
     li.active-tab{

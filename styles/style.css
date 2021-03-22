@@ -1,3 +1,11 @@
+li {
+  list-style-type: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9,7 +17,7 @@ body {
   font-family: 'Poppins',sans-serif;
 }
 
-header {
+.header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,16 +31,19 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0px;
 }
 
-header .logo h4 {
+.header .logo h4 {
   font-size: 14px;
   font-weight: 700;
   margin: 0px;
 }
 
-header .main-nav .nav-list {
+.header .main-nav .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,7 +61,7 @@ header .main-nav .nav-list {
   margin: 0px;
 }
 
-header .main-nav .nav-list .nav-list-item .nav-link {
+.header .main-nav .nav-list .nav-list-item .nav-link {
   text-decoration: none;
   font-size: 12px;
   font-weight: 600;
@@ -59,12 +70,12 @@ header .main-nav .nav-list .nav-list-item .nav-link {
   position: relative;
 }
 
-header .main-nav .nav-list .nav-list-item .nav-link:hover {
+.header .main-nav .nav-list .nav-list-item .nav-link:hover {
   -webkit-transition: 2s ease;
   transition: 2s ease;
 }
 
-header .main-nav .nav-list .nav-list-item .nav-link:hover:before {
+.header .main-nav .nav-list .nav-list-item .nav-link:hover:before {
   content: '';
   height: 2px;
   width: 39%;
@@ -76,21 +87,46 @@ header .main-nav .nav-list .nav-list-item .nav-link:hover:before {
 
 .hero-section {
   padding: 0px;
-  height: calc(100vh - 50px);
+  height: calc(100vh - 300px);
   background: black;
   overflow-y: hidden;
+  background-image: url(../assets/ilyuza-mingazova-rCPpZqIm4Ug-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 20px;
+      flex-basis: 20px;
 }
 
-.hero-section img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center;
+.hero-section h4 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.hero-section a {
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  margin-top: 10px;
 }
 
 .about-me {
   height: 300px;
-  padding: 50px 0px;
+  padding: 20px 0px;
 }
 
 .about-me .am-content {
@@ -177,6 +213,8 @@ header .main-nav .nav-list .nav-list-item .nav-link:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style-type: none;
   margin-top: 20px;
 }
@@ -189,8 +227,18 @@ header .main-nav .nav-list .nav-list-item .nav-link:hover:before {
   cursor: pointer;
 }
 
-.gallery-section .individual-tab:hover {
-  border: 1px solid #e3dddd;
+.gallery-section .individual-tab a {
+  color: #454545;
+}
+
+.gallery-section .individual-tab a:hover {
+  background: #454545;
+  color: #fff;
+}
+
+.gallery-section .individual-tab a.active {
+  background: #454545;
+  color: #fff;
 }
 
 .gallery-section li.active-tab {

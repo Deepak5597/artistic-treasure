@@ -14,132 +14,627 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="container" id="home">
-        <div class="logo">
-            <h4>ARTISTIC TREASURE</h4>
-        </div>   
-        <nav class="main-nav">
-            <ul class="nav-list">
-                <li class="nav-list-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#about-me">About Me</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#my-work">My Work</a></li>
-                <li class="nav-list-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
-            </ul>
-        </nav>
+    <header class="header" id="home">
+            <div class="logo">
+                <h4>ARTISTIC TREASURE</h4>
+            </div>   
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-list-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#my-work">My Work</a></li>
+                    <li class="nav-list-item"><a class="nav-link" href="#contact-us">Contact Us</a></li>
+                </ul>
+            </nav>
     </header>
-    <main class="container-fluid hero-section">
+    
+    <main class="hero-section">
         <!-- <img src="assets/sunbeam-photography-FRBkG30Cu0c-unsplash.jpg" alt=""> -->
-        <img src="assets/ilyuza-mingazova-rCPpZqIm4Ug-unsplash.jpg" alt="">
+        <!-- <img src="assets/ilyuza-mingazova-rCPpZqIm4Ug-unsplash.jpg" alt=""> -->
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, doloremque?</h4>
+        <a href="javscript:void(0)">Contact For Work</a>
     </main>
-    <section class="about-me container" id="about-me">
-        <div class="row">
-            <div class="am-content col-md-8">
-                <h4>A Few Words About Me</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur ratione nam ullam provident nulla laudantium sunt blanditiis. Recusandae, sapiente.</p>
-                <a href="javascript:void(0)">Know More</a>
+
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="am-content col-md-8">
+                    <h4>A Few Words About Me</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus consequuntur ratione nam ullam provident nulla laudantium sunt blanditiis. Recusandae, sapiente.</p>
+                    <a href="javascript:void(0)">Know More</a>
+                </div> 
+                <div class="am-image col-md-4">
+                    <img src="assets/pic.jpg" alt="" class="img-responsive">
+                </div> 
             </div> 
-            <div class="am-image col-md-4">
-                <img src="assets/pic.jpg" alt="" class="img-responsive">
-            </div> 
-        </div> 
+        </div>
     </section>
 
-    <section class="gallery-section container-fluid" id="my-work">
+    <section class="gallery-section container-fluid" id="my-work" role="tablist">
         <h4>My Work</h4>
-        <ul class="tab-list">
-            <li class="individual-tab active-tab">All</li>
-            <li class="individual-tab">Creative Painting</li>
-            <li class="individual-tab">Design</li>
-            <li class="individual-tab">Object Study</li>
-            <li class="individual-tab">Potrait</li>
-            <li class="individual-tab">Silk Screen</li>
-            <li class="individual-tab">Stripling Work</li>
-        </ul>
-        <div class="gallery container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/0.jpg" alt="">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/1.jpg" alt="">
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
 
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/2.jpg" alt="">
+        <ul class="nav nav-pills mb-3 tab-list" id="pills-tab" role="tablist">
+            <li class="nav-item individual-tab">
+              <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-creative-painting-tab" data-toggle="pill" href="#pills-creative-painting" role="tab" aria-controls="pills-creative-painting" aria-selected="false">Creative Painting</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-design-tab" data-toggle="pill" href="#pills-design" role="tab" aria-controls="pills-design" aria-selected="false">Design</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-Object-Study-tab" data-toggle="pill" href="#pills-Object-Study" role="tab" aria-controls="pills-Object-Study" aria-selected="false">Object Study</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-Potrait-tab" data-toggle="pill" href="#pills-Potrait" role="tab" aria-controls="pills-Potrait" aria-selected="false">Potrait</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-Silk-Screen-tab" data-toggle="pill" href="#pills-Silk-Screen" role="tab" aria-controls="pills-Silk-Screen" aria-selected="false">Silk Screen</a>
+            </li>
+            <li class="nav-item individual-tab">
+              <a class="nav-link" id="pills-Stripling-Work-tab" data-toggle="pill" href="#pills-Stripling-Work" role="tab" aria-controls="pills-Stripling-Work" aria-selected="false">Stripling Work</a>
+            </li>
+          </ul>
+          <div class="tab-content gallery" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab"><div class="s"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/0.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/3.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/4.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/5.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/6.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/7.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/8.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/6.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="image-box">
-                        <div class="top">
-                            <img src="./assets/creative_painting/9.jpg" alt="">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/7.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/8.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/9.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="tab-pane fade" id="pills-creative-painting" role="tabpanel" aria-labelledby="pills-creative-painting-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/0.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/6.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/7.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/8.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/creative_painting/9.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/design/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/design/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/design/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/design/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/design/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Object-Study" role="tabpanel" aria-labelledby="pills-Object-Study-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/6.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/7.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/8.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/9.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/10.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/11.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/12.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/13.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/14.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/15.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/16.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/17.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/18.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/object_study/19.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Potrait" role="tabpanel" aria-labelledby="pills-Potrait-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/6.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/7.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/8.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/9.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/10.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/11.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/portrait/12.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Silk-Screen" role="tabpanel" aria-labelledby="pills-Silk-Screen-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/silk_screen/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Stripling-Work" role="tabpanel" aria-labelledby="pills-Stripling-Work-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/1.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/2.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/3.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/4.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/5.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/6.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="image-box">
+                                <div class="top">
+                                    <img src="./assets/stripling_work/7.jpg" alt="">
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
     </section>
 
     <div class="ask-for-work container" id="contact-us">
