@@ -1,0 +1,35 @@
+@import "_variables";
+
+@media only screen and (max-width: 992px) {
+    
+    
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .top-nav{
+        .list-item{
+            text-align: center !important;
+            &:hover{
+                text-decoration: underline;
+            }
+            .ind-link{
+                &:before{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .contact-form{
+        padding: 20px !important;
+    }
+
+    .am-content{
+        align-items:center !important;
+        p{
+            text-align: center;
+        }
+    }
+
+}
